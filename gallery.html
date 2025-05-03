@@ -12,6 +12,19 @@
       name="keywords"
       content="love running, run, running club, runners, Ireland, Dublin, sport, exercise"
     />
+
+    <!---   <base href="/love-running/"> -->
+    <script>
+      (function() {
+      const path = window.location.pathname;
+      if (path.startsWith('/love-running/')) {
+      const b = document.createElement('base');
+      b.setAttribute('href', '/love-running/');
+      document.head.insertBefore(b, document.head.firstChild);
+      }
+      })();
+      </script>
+
     <!--- Title --->
     <title>Love running</title>
     <!---- Favicon --->
